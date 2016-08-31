@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>FreeCodeCamp TicTacToe</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="main.css" >
+  </link>
+
+  <style type="text/css">
+    header, section, footer, aside, nav, article, figure, audio, video, canvas  { display:block; }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+  
+    <section id="content">
+      <article>
+        <div class="pageWrap">
+          <div id="introScreen">
+            
+            <div class='brand brand1'>
+              <div class="well1">
+                <div class="col-xs-4"></div>
+                <div  id="title" class="col-xs-4"><h2>ticTacToe</h2></div>
+                <div id="headerTag" class="col-xs-4"><p>a <span id='fccLogo'> FreeCodeCamp</span> project</p></div>
+              </div>
+            </div>
+            
+            <div class='brand brand2'>
+              <div class="choosePanel col-xs-8"><span>Choose a side!</span></div>
+              <div class="choosePanel choosePanel2 col-xs-4">
+                <div id="xBtn" class="marker btn btn-default " data-marker="X"><span>X</span></div>
+                <div id="oBtn" class="marker btn btn-default" data-marker="O"><span>O</span></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="wrap">
+            <div id="backdrop"></div>
+            <div class="row">
+              <div class="col-xs-4 box box0">
+                  <span></span>
+              </div>
+
+              <div class="col-xs-4 box box1">
+                  <span></span>
+              </div>
+
+              <div class="col-xs-4 box box2">
+                  <span></span>
+              </div>
+              
+            </div>
+            
+            <div class="row">
+              <div class="col-xs-4 box box3">
+                  <span></span>
+              </div>
+              <div class="col-xs-4 box box4">
+                  <span></span>
+              </div>
+              <div class="col-xs-4 box box5">
+                  <span></span>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-xs-4 box box6">
+                  <span></span>
+              </div>
+              <div class="col-xs-4 box box7">
+                  <span></span>
+              </div>
+              <div class="col-xs-4 box box8">
+                  <span></span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </article>
+    </section>
+    
+    <div class="well">
+    </div>
+  </div>
+
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Game -->
+<script src="game.js"></script>
+
+</body>
+</html>

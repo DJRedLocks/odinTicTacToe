@@ -1,0 +1,217 @@
+/* **** **** **** **** **** **** **** **** **** **** **** ****
+Colors
+gray    rgba(128,128,128,1)
+black   rgba(0,0,0,1)
+yellow  rgba(225,225,170,1)
+white   rgba(255,255,255,1)
+
+
+
+**** **** **** **** **** **** **** **** **** **** **** **** */
+
+
+/* **** **** **** **** **** **** **** **** **** **** **** ****
+General Styles
+**** **** **** **** **** **** **** **** **** **** **** **** */
+
+body {
+  background-color: rgba(128,128,128,1);
+  font-family: 'Helvetica', sans-serif;
+  color: white;
+}
+
+.pageWrap {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+/* **** **** **** **** **** **** **** **** **** **** **** ****
+Game Board Styles
+**** **** **** **** **** **** **** **** **** **** **** **** */
+
+.wrap {
+  height: 500px;
+  min-width: 499px;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.row {
+  height: 33.4%;
+  width: 100%;
+  margin: 0;
+}
+
+.wrap .col-xs-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 2px solid rgba(225,225,170,1);
+  index: 1;
+}
+
+.box {
+  
+  z-index: 98;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.col-xs-4 span {
+  font-size: 3em;
+  
+}
+
+
+
+
+/* **** **** **** **** **** **** **** **** **** **** **** ****
+Intro Screen Styles
+**** **** **** **** **** **** **** **** **** **** **** **** */
+
+#introScreen {
+  
+  /* Positioning */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  
+  /* Display & Box Model */
+  
+  height: 300px;
+  width: 600px;
+  z-index: 99;
+  
+  padding: 5px;
+
+  /* Colors */
+  background-color: white;
+  
+  /* Text */
+  
+  
+  /* Other */
+  
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  
+}
+
+.brand1 {
+  height: 60%;
+}
+
+.brand2 {
+  height: 30%;
+  border-top: 5px solid gold;
+  display: flex;
+  flex-direction: row;
+}
+
+.well1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+div #headerTag {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  
+}
+
+.col-xs-4 span {
+  font-size: 1em;
+}
+
+#fccLogo {
+  font-family: 'Pacifico', cursive, sans-serif;
+}
+
+
+/* **** **** **** **** **** **** **** **** **** **** **** ****
+Pens buttons styles
+**** **** **** **** **** **** **** **** **** **** **** **** */
+
+.brand .btn {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4em;
+  margin-right: 5px;
+}
+
+#xBtn {
+  background: white;
+}
+
+#oBtn {
+  background: black;
+  color: white;
+}
+
+.choosePanel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* **** **** **** **** **** **** **** **** **** **** **** ****
+Well styles
+**** **** **** **** **** **** **** **** **** **** **** **** */
+
+.well {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
